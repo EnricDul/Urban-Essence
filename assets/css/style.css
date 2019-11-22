@@ -1,0 +1,32 @@
+header h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #be4357;
+  font-family: 'Great Vibes', cursive; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e4b4cf;
+    border: solid 1px #be4357;
+    width: 70%;
+    height: 90px;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px; }
+    .nav-bar ul li {
+      list-style-type: none;
+      padding: 35px;
+      padding-left: 60px;
+      padding-right: 60px; }
+      .nav-bar ul li a {
+        text-decoration: none;
+        color: #be4357; }
+    .nav-bar ul li:hover {
+      background-color: #e9bebe;
+      border-bottom: black; }
