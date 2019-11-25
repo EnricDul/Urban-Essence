@@ -34,6 +34,6 @@ Footer :
 Ref : http://instantbeaute.be/
 
 Code colors : 
-light-green 148	220	196	
-green-grey 195	206	202	
-dark-grey 78 78	78	
+light-green #90DCC4
+green-grey #C3CECA
+dark-grey #4E4E4E
