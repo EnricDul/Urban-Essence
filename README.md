@@ -2,15 +2,15 @@
 Refonte du site Urban Essence.
 
 - Header 
-- [ ] Logo
-- [ ] Slogan
+- [X] Logo
+- [X] Slogan
 
 - Navbar 
-- [ ] Accueil
-- [ ] Soins et tarifs 
-- [ ] Nos produits 
+- [X] Accueil
+- [X] Soins et tarifs 
+- [X] Nos produits 
 - [ ] Gallerie (photos ?) 
-- [ ] Pris de rdv (form)
+- [X] Pris de rdv (form) PAS DANS NAVBAR
 
 - Accueil 
 - [ ] Titre
