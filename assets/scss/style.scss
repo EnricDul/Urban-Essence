@@ -1,48 +1,122 @@
-header {
+//DEFAULTS PAGE SETTINGS
+// color code : rgb(195, 206, 202) light-blue
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
-  h1 {
-    text-align: center;
-    font-size: 60px;
-    // color: #ed99c9;
-    color: #be4357;
-    font-family: 'Great Vibes', cursive;
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+//NAVBAR
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-right: 0;
+  height: 90px;
+  background-color: white;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4E4E4E;
   }
+
 }
 
 
 
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+//NAVBAR LOGO + TITLE
 
-  ul {
+.navbar {
+
+  #nav-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    width: 30%;
+    color: #4E4E4E;
+    text-align: center;
+
+  }
+
+  p {
+    margin: 0px;
+    font-size: 15px;
+  }
+
+}
+
+
+
+//NAVBAR BUTTON AND LINK
+div #center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+
+  .nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+
+    a {
+      border-bottom: solid 2px #90DCC4;
+      margin-right: 90px;
+      font-size: 14px;
+
+    }
+
+    a:hover {
+      transition-property: border-bottom;
+      transition-timing-function: ease-in;
+      transition-duration: 1s;
+      border-bottom: solid 2px rgb(78, 78, 78);
+    }
+  }
+}
+
+
+///////////////// FOOTER /////////////////////
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .pos-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #e4b4cf;
-    border: solid 1px #be4357;
-    width: 70%;
-    height: 90px;
-    margin: 0px;
-    margin-top: 30px;
-    padding: 0px;
 
-    li {
-      list-style-type: none;
-      padding: 35px;
-      padding-left: 60px;
-      padding-right: 60px;
+    .info {
+      display: flex;
+      flex-direction: column;
 
-      a {
-        text-decoration: none;
-        color: #be4357;
+      .contact {
+        text-align: center;
+        margin-bottom: 30px;
       }
-    }
 
-    li:hover {
-      background-color: rgb(233, 190, 190);
-      border-bottom: black;
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
     }
   }
+
 }

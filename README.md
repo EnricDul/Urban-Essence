@@ -10,7 +10,7 @@ Refonte du site Urban Essence.
 - [X] Soins et tarifs 
 - [X] Nos produits 
 - [ ] Gallerie (photos ?) 
-- [X] Pris de rdv (form) (pas dans navbar)
+- [X] Pris de rdv (form) PAS DANS NAVBAR
 
 - Accueil 
 - [ ] Titre
@@ -37,3 +37,11 @@ Code colors :
 light-green #90DCC4
 green-grey #C3CECA
 dark-grey #4E4E4E
+light-green 148	220	196	
+green-grey 195	206	202	
+dark-grey 78 78	78	
+
+Police :
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+font-family: 'Quicksand', sans-serif;
+
