@@ -1,32 +1,74 @@
-header h1 {
-  text-align: center;
-  font-size: 60px;
-  color: #be4357;
-  font-family: 'Great Vibes', cursive; }
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0; }
 
-.nav-bar {
+.navbar {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  .nav-bar ul {
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-right: 0;
+  height: 90px;
+  background-color: white; }
+  .navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4E4E4E; }
+
+.navbar #nav-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30px;
+  width: 30%;
+  color: #4E4E4E;
+  text-align: center; }
+
+.navbar p {
+  margin: 0px;
+  font-size: 15px; }
+
+div #center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%; }
+  div #center .nav-btn {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: #e4b4cf;
-    border: solid 1px #be4357;
-    width: 70%;
-    height: 90px;
-    margin: 0px;
-    margin-top: 30px;
-    padding: 0px; }
-    .nav-bar ul li {
-      list-style-type: none;
-      padding: 35px;
-      padding-left: 60px;
-      padding-right: 60px; }
-      .nav-bar ul li a {
-        text-decoration: none;
-        color: #be4357; }
-    .nav-bar ul li:hover {
-      background-color: #e9bebe;
-      border-bottom: black; }
+    justify-content: flex-end;
+    width: 100%; }
+    div #center .nav-btn a {
+      border-bottom: solid 2px #90DCC4;
+      margin-right: 90px;
+      font-size: 14px; }
+    div #center .nav-btn a:hover {
+      transition-property: border-bottom;
+      transition-timing-function: ease-in;
+      transition-duration: 1s;
+      border-bottom: solid 2px #4e4e4e; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+  footer .pos-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .pos-center .info {
+      display: flex;
+      flex-direction: column; }
+      footer .pos-center .info .contact {
+        text-align: center;
+        margin-bottom: 30px; }
+      footer .pos-center .info .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 30px; }
