@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  position: fixed;
+  position: relative;
   top: 0;
   overflow: hidden;
   width: 100%;
