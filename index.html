@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
 
   <title>Urban Essence</title>
 </head>
@@ -52,12 +53,12 @@
         </p>
       </div>
       <div class="col s12">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="https://bit.ly/2rvMtb6"></a>
-          <a class="carousel-item" href="#two!"><img src="https://bit.ly/2rvMtb6"></a>
-          <a class="carousel-item" href="#three!"><img src="https://bit.ly/2rvMtb6"></a>
-          <a class="carousel-item" href="#four!"><img src="https://bit.ly/2rvMtb6"></a>
-          <a class="carousel-item" href="#five!"><img src="https://bit.ly/2rvMtb6"></a>
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#one!"><img src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg"></a>
+          <a class="carousel-item" href="#two!"><img src="https://solotravelerworld.com/wp-content/uploads/2019/07/new-zealand-cyclist.jpg"></a>
+          <a class="carousel-item" href="#three!"><img src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg"></a>
+          <a class="carousel-item" href="#four!"><img src="https://solotravelerworld.com/wp-content/uploads/2019/07/new-zealand-cyclist.jpg"></a>
+          <a class="carousel-item" href="#five!"><img src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg"></a>
         </div>
       </div>
       <div class="col s6">6-columns</div>
@@ -76,10 +77,18 @@
     </div>
 
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
-<script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
 
+    var instances = M.Carousel.init(elems, 
+      {fullWidth: true,
+        indicators: true,
+        duration: 200}
+    );
+ });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
