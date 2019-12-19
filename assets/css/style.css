@@ -1,37 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+html {
+  height: 100%;
+  overflow: hidden; }
+
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
-.navbar {
+#navbar {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
   width: 100%;
   margin-right: 0;
   height: 90px;
-  background-color: white; }
-  .navbar a {
+  background-color: white;
+  transition: top 0.3s; }
+  #navbar a {
     display: inline-block;
     text-decoration: none;
     color: #4E4E4E; }
 
-.navbar #nav-title {
+#navbar #nav-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 30px;
   width: 30%;
-  color: #4E4E4E;
+  color: #90DCC4;
   text-align: center; }
 
-.navbar p {
+#navbar p {
   margin: 0px;
-  font-size: 15px; }
+  font-size: 15px;
+  color: #4E4E4E; }
 
 div #center {
   display: flex;
@@ -50,25 +58,113 @@ div #center {
     div #center .nav-btn a:hover {
       transition-property: border-bottom;
       transition-timing-function: ease-in;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       border-bottom: solid 2px #4e4e4e; }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
-  footer .pos-center {
+  width: 100%;
+  margin-top: 100px; }
+  footer .info {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    footer .pos-center .info {
+    flex-direction: column; }
+    footer .info .social {
       display: flex;
-      flex-direction: column; }
-      footer .pos-center .info .contact {
-        text-align: center;
-        margin-bottom: 30px; }
-      footer .pos-center .info .social {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 30px; }
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 30px; }
+      footer .info .social img {
+        width: 20px;
+        height: 20px;
+        margin-left: 30px;
+        margin-right: 30px; }
+      footer .info .social img:hover {
+        transform: scale(1.1); }
+
+.parallax-title {
+  box-sizing: border-box;
+  height: 50vh;
+  padding: 30vw, 0, 5vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  z-index: -1; }
+  .parallax-title h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -600px;
+    border: solid 1px #90DCC4;
+    border-radius: 2px;
+    text-align: center;
+    color: #4E4E4E;
+    font-size: 50px;
+    background-color: white;
+    width: 50%; }
+
+.parallax-title, .parallax-title:before {
+  background: 50%, 50% / cover; }
+
+.parallax-title::before {
+  content: "";
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  display: block;
+  background-image: url(../../img/epilation.jpg);
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh; }
+
+.body-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  height: 500px;
+  background-color: white; }
+  .body-article .body-part {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    color: #4E4E4E;
+    padding-top: 15px;
+    border: solid 2px #90DCC4;
+    border-radius: 5px;
+    background-color: #90DCC4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 200px;
+    height: 50px; }
+  .body-article .tarif {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    border: solid 2px #90DCC4;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    width: 40%;
+    height: 200px;
+    z-index: 1; }
+    .body-article .tarif .table {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .body-article .tarif .table ul {
+        padding-left: 100px;
+        padding-right: 100px;
+        list-style-type: none; }
+        .body-article .tarif .table ul li {
+          padding-top: 20px;
+          text-align: left; }
+        .body-article .tarif .table ul #titre-list {
+          border-bottom: solid 2px #90DCC4; }
