@@ -97,7 +97,7 @@ footer {
     border-radius: 2px;
     text-align: center;
     color: #4E4E4E;
-    font-size: 50px;
+    font-size: 30px;
     background-color: white;
     width: 50%; }
 
@@ -124,7 +124,6 @@ footer {
   flex-direction: row;
   justify-content: center;
   padding-top: 10px;
-  height: 500px;
   background-color: white; }
   .body-article .body-part {
     font-size: 30px;
@@ -139,19 +138,18 @@ footer {
     margin-bottom: 0px;
     position: absolute;
     width: 200px;
-    height: 50px; }
+    height: 50px;
+    z-index: 2; }
   .body-article .tarif {
     font-size: 15px;
     font-weight: bold;
     display: block;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 0px;
     border: solid 2px #90DCC4;
     border-radius: 5px;
     color: black;
-    position: absolute;
     width: 40%;
-    height: 200px;
     z-index: 1; }
     .body-article .tarif .table {
       width: 100%;
@@ -160,11 +158,22 @@ footer {
       flex-direction: row;
       justify-content: space-between; }
       .body-article .tarif .table ul {
-        padding-left: 100px;
-        padding-right: 100px;
-        list-style-type: none; }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+        list-style-type: none;
+        width: 100%; }
         .body-article .tarif .table ul li {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
           padding-top: 20px;
-          text-align: left; }
+          margin-left: 10px;
+          margin-right: 10px;
+          text-align: left;
+          margin: 0px;
+          width: 100%; }
         .body-article .tarif .table ul #titre-list {
-          border-bottom: solid 2px #90DCC4; }
+          border-bottom: solid 2px #90DCC4;
+          text-align: left; }
